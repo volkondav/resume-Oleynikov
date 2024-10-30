@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-photo.jpg" alt="Oleynikov Evgeny" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Олейников Евгений</h1>
+
+          <p class="title">Разработчик Unity</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Контакты</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+            <li class="contact-item">
+
+                <div class="icon-box">
+                     <ion-icon name="language-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                    <p class="contact-title">Язык</p>
+
+                    <address>Русский,<br>Английский (B2)</address>
+                </div>
+
+            </li>
+
+            <li class="contact-item">
+
+                <div class="icon-box">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                    <p class="contact-title">Email</p>
+
+                    <a class="email">e-oleynikov-a@mail.ru</a>
+                </div>
+
+            </li>
+
+            <li class="contact-item">
+
+                <div class="icon-box">
+                    <ion-icon name="location-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                    <p class="contact-title">Адрес</p>
+
+                    <address>Московская область, Россия</address>
+                </div>
+
+            </li>
+
+            <li class="contact-item">
+
+                <div class="icon-box">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                    <p class="contact-title">Дата рождения</p>
+
+                    <time datetime="2001-04-08">8 Апреля, 2001</time>
+                </div>
+
+            </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+            <li class="social-item">
+                <a href="https://t.me/isEvgeny" class="social-link">
+                    <img src="./assets/images/telegram-icon.png" width="30px" title="telegram">
+                </a>
+            </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Резюме</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Портфолио</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #РЕЗЮМЕ
+      -->
+
+      <article class="about  active" data-page="резюме">
+
+          <header>
+              <h2 class="h2 article-title">Обо мне</h2>
+          </header>
+
+          <section class="about-text">
+              <p>
+                  В 2022 году я начал изучать Unity и C# на институтском курсе, с тех пор активно развиваюсь в этих технологиях. 
+                  Меня особенно увлекает программирование игровой логики и участие в командных проектах. Я ценю возможность работать 
+                  с единомышленниками, обмениваться идеями и создавать интересные игровые механики.
+              </p>
+
+              <p>
+                  Обладаю ответственным подходом к задачам, самокритичен и постоянно стремлюсь к профессиональному росту в сфере игровой разработки. 
+                  Моя цель — совершенствовать навыки и активно участвовать в создании качественных игр.
+              </p>
+          </section>
+
+
+          <!--
+     - service
+    -->
+
+          <section class="service">
+
+              <h3 class="h3 service-title">Навыки</h3>
+
+              <ul class="service-list">
+
+                  <li class="service-item">
+                      <div class="service-content-box">
+                          <h4 class="h4 service-item-title">C#</h4>
+                      </div>
+
+                  </li>
+
+                  <li class="service-item">
+                      <div class="service-content-box">
+                          <h4 class="h4 service-item-title">Unity</h4>
+                      </div>
+
+                  </li>
+
+                  <li class="service-item">
+                      <div class="service-content-box">
+                          <h4 class="h4 service-item-title">Git</h4>
+                      </div>
+
+                  </li>
+
+                  <li class="service-item">
+                      <div class="service-content-box">
+                          <h4 class="h4 service-item-title">ООП</h4>
+                      </div>
+
+                  </li>
+
+                  <li class="service-item">
+                      <div class="service-content-box">
+                          <h4 class="h4 service-item-title">ChatGPT</h4>
+                      </div>
+
+                  </li>
+
+              </ul>
+
+          </section>
+
+
+          <section class="timeline">
+
+              <div class="title-wrapper">
+                  <div class="icon-box">
+                      <ion-icon name="book-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3">Опыт работы</h3>
+              </div>
+
+              <ol class="timeline-list">
+
+                  <li class="timeline-item">
+
+                      <h4 class="h4 timeline-item-title">Личный проект</h4>
+
+                      <span>Декабрь 2023</span>
+
+                      <p class="timeline-text">
+                          Задачи:
+                          <br>
+                          • Программирование игровой логики
+                          <br>
+                          • Подключение готовых ассетов
+                          <br>
+                          • Участие в планировании и оценке сроков выполнения задач
+                          <br>
+                          Ссылка:
+                          <div class="timeline-ol">
+                              <a href="https://vysotskiiaa.itch.io/spellcheck-prototype?password=avportfolio" target="_blank" rel="noreferrer">Spellcheck</a>
+                          </div>
+                      </p>
+
+                  </li>
+
+                  <li class="timeline-item">
+
+                      <h4 class="h4 timeline-item-title">GameBox</h4>
+
+                      <span>Май 2023</span>
+
+                      <p class="timeline-text">
+                          Задачи:
+                          <br>
+                          • Программирование игровой логики
+                          <br>
+                          • Подключение готовых ассетов
+                          <br>
+                          • Участие в планировании и оценке сроков выполнения задач
+                          <br>
+                          Достижения :
+                          <br>
+                          • Игра заняла 17 место из 107
+                          <br>
+                          Ссылка:
+                          <div class="timeline-ol">
+                              <a href="https://vysotskiiaa.itch.io/my-little-home" target="_blank" rel="noreferrer">My Little Home</a>
+                          </div>
+                      </p>
+
+                  </li>
+
+                  <li class="timeline-item">
+
+                      <h4 class="h4 timeline-item-title">Личный проект</h4>
+
+                      <span>Июль 2022</span>
+
+                      <p class="timeline-text">
+                          Задачи:
+                          <br>
+                          • Программирование игровой логики
+                          <br>
+                          • Подключение готовых ассетов
+                          <br>
+                          • Участие в планировании и оценке сроков выполнения задач
+                          <br>
+                          Ссылка:
+                          <div class="timeline-ol">
+                              <a href="https://vysotskiiaa.itch.io/laqueus?password=avportfolio" target="_blank" rel="noreferrer">Laqueus</a>
+                          </div>
+                      </p>
+
+                  </li>
+
+              </ol>
+          </section>
+
+          
+          <section class="instruments">
+            <h3 class="h3 service-title">Мои интсрументы</h3>
+
+            <div class="image-container">
+                <img src="./assets/images/unity.png" alt="Unity" title="Unity">
+                <img src="./assets/images/chatgpt.png" alt="Chat GPT" title="Chat GPT">
+                <img src="./assets/images/git.png" alt="Git" title="Git">
+                <img src="./assets/images/notion.png" alt="Notion" title="Notion">
+            </div>
+          </section>  
+
+
+          <section class="timeline">
+
+              <div class="title-wrapper">
+                  <div class="icon-box">
+                      <ion-icon name="book-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3">Образование</h3>
+              </div>
+
+              <ol class="timeline-list">
+
+                  <li class="timeline-item">
+
+                      <h4 class="h4 timeline-item-title">РТУ МИРЭА, Москва</h4>
+
+                      <span>2019 — 2023</span>
+
+                      <p class="timeline-text">
+                          Высшее образование по специальности "Прикладная информатика".
+                      </p>
+
+                  </li>
+              </ol>
+
+          </section>
+
+
+          <!--
+      - testimonials
+
+
+    <section class="testimonials">
+
+      <h3 class="h3 testimonials-title">Testimonials</h3>
+
+      <ul class="testimonials-list has-scrollbar">
+
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+
+            <figure class="testimonials-avatar-box">
+              <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+            </figure>
+
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+            <div class="testimonials-text" data-testimonials-text>
+              <p>
+                Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                lot of experience
+                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                consectetur adipiscing
+                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+              </p>
+            </div>
+
+          </div>
+        </li>
+
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+
+            <figure class="testimonials-avatar-box">
+              <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+            </figure>
+
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+            <div class="testimonials-text" data-testimonials-text>
+              <p>
+                Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                lot of experience
+                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                consectetur adipiscing
+                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+              </p>
+            </div>
+
+          </div>
+        </li>
+
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+
+            <figure class="testimonials-avatar-box">
+              <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+            </figure>
+
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+            <div class="testimonials-text" data-testimonials-text>
+              <p>
+                Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                lot of experience
+                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                consectetur adipiscing
+                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+              </p>
+            </div>
+
+          </div>
+        </li>
+
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+
+            <figure class="testimonials-avatar-box">
+              <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+            </figure>
+
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+            <div class="testimonials-text" data-testimonials-text>
+              <p>
+                Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                lot of experience
+                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                consectetur adipiscing
+                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+              </p>
+            </div>
+
+          </div>
+        </li>
+
+      </ul>
+
+    </section>
+    -->
+          <!--
+        - testimonials modal
+    -->
+
+          <div class="modal-container" data-modal-container>
+
+              <div class="overlay" data-overlay></div>
+
+              <section class="testimonials-modal">
+
+                  <button class="modal-close-btn" data-modal-close-btn>
+                      <ion-icon name="close-outline"></ion-icon>
+                  </button>
+
+                  <div class="modal-img-wrapper">
+                      <figure class="modal-avatar-box">
+                          <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                      </figure>
+
+                      <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                  </div>
+
+                  <div class="modal-content">
+
+                      <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                      <time datetime="2021-06-14">14 June, 2021</time>
+
+                      <div data-modal-text>
+                          <p>
+                         
+                          </p>
+                      </div>
+
+                  </div>
+
+              </section>
+
+          </div>
+
+          <!--
+    - clients
+
+
+          <section class="clients">
+
+              <h3 class="h3 clients-title">Clients</h3>
+
+              <ul class="clients-list has-scrollbar">
+
+                  <li class="clients-item">
+                      <a href="#">
+                          <img src="./assets/images/logo-1-color.png" alt="client logo">
+                      </a>
+                  </li>
+
+                  <li class="clients-item">
+                      <a href="#">
+                          <img src="./assets/images/logo-2-color.png" alt="client logo">
+                      </a>
+                  </li>
+
+                  <li class="clients-item">
+                      <a href="#">
+                          <img src="./assets/images/logo-3-color.png" alt="client logo">
+                      </a>
+                  </li>
+
+                  <li class="clients-item">
+                      <a href="#">
+                          <img src="./assets/images/logo-4-color.png" alt="client logo">
+                      </a>
+                  </li>
+
+                  <li class="clients-item">
+                      <a href="#">
+                          <img src="./assets/images/logo-5-color.png" alt="client logo">
+                      </a>
+                  </li>
+
+                  <li class="clients-item">
+                      <a href="#">
+                          <img src="./assets/images/logo-6-color.png" alt="client logo">
+                      </a>
+                  </li>
+
+              </ul>
+
+          </section>
+          -->
+      </article>
+    
+
+        <!--
+        - #PORTFOLIO
+        -->
+
+          <article class="portfolio" data-page="портфолио">
+
+              <header>
+                  <h2 class="h2 article-title">Портфолио</h2>
+              </header>
+
+              <section class="projects">
+
+                  <ul class="project-list">
+
+                      <li class="project-item  active" data-filter-item data-category="личные проекты">
+                          <a href="https://vysotskiiaa.itch.io/spellcheck-prototype?password=avportfolio" target="_blank" rel="noreferrer">
+                              <figure class="project-img">
+                                  <div class="project-item-icon-box">
+                                      <ion-icon name="eye-outline"></ion-icon>
+                                  </div>
+
+                                  <img src="./assets/images/project-1.png" alt="spellcheck" loading="lazy">
+                              </figure>
+
+                              <h3 class="project-title">Spellcheck</h3>
+
+                              <p class="project-category">Action-typer</p>
+
+                          </a>
+                      </li>
+
+                      <li class="project-item  active" data-filter-item data-category="личные проекты">
+                          <a href="https://vysotskiiaa.itch.io/my-little-home" target="_blank" rel="noreferrer">
+
+                              <figure class="project-img">
+                                  <div class="project-item-icon-box">
+                                      <ion-icon name="eye-outline"></ion-icon>
+                                  </div>
+
+                                  <img src="./assets/images/project-2.png" alt="little-home" loading="lazy">
+                              </figure>
+
+                              <h3 class="project-title">My Little Home</h3>
+
+                              <p class="project-category">Survival-farm</p>
+
+                          </a>
+                      </li>
+
+                      <li class="project-item  active" data-filter-item data-category="личные проекты">
+                          <a href="https://vysotskiiaa.itch.io/laqueus?password=avportfolio" target="_blank" rel="noreferrer">
+
+                              <figure class="project-img">
+                                  <div class="project-item-icon-box">
+                                      <ion-icon name="eye-outline"></ion-icon>
+                                  </div>
+
+                                  <img src="./assets/images/project-3.png" alt="laqueas" loading="lazy">
+                              </figure>
+
+                              <h3 class="project-title">Laqueus</h3>
+
+                              <p class="project-category">Puzzle-runner</p>
+
+                          </a>
+                      </li
+                  </ul>
+
+              </section>
+
+          </article>
+
+</div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
